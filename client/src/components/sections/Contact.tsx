@@ -3,7 +3,7 @@ const Contact = () => {
     <section id="contact" className="py-16 md:py-24 bg-soft-beige">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-4xl font-display font-bold mb-4 text-dark-text">
+          <h2 className="text-2xl md:text-4xl font-migra font-bold mb-4 text-dark-text">
             Contact <span className="text-brand-green">Us</span>
           </h2>
           <p className="text-base md:text-lg font-body text-dark-text max-w-2xl mx-auto">
@@ -14,7 +14,7 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row -mx-4">
           <div className="md:w-1/2 px-4 mb-8 md:mb-0">
             <div className="bg-white rounded-lg shadow-md p-6 h-full">
-              <h3 className="text-xl md:text-2xl font-display font-semibold mb-6 text-dark-text">Contact Information</h3>
+              <h3 className="text-xl md:text-2xl font-migra font-semibold mb-6 text-dark-text">Contact Information</h3>
               
               <div className="flex items-start mb-6">
                 <div className="text-brand-green mr-4">

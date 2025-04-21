@@ -2,7 +2,7 @@ const Shop = () => {
   return (
     <section id="shop" className="py-16 md:py-24 bg-soft-beige">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-2xl md:text-4xl font-display font-bold mb-6 text-dark-text">
+        <h2 className="text-2xl md:text-4xl font-migra font-bold mb-6 text-dark-text">
           Shop Our <span className="text-brand-green">Products</span>
         </h2>
         <p className="text-base md:text-lg font-body text-dark-text max-w-2xl mx-auto mb-10">
