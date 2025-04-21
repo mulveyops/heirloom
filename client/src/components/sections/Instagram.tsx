@@ -1,11 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
-import Instafeed from 'instafeed.js';
+import { useEffect } from 'react';
 
-interface InstagramProps {
-  accessToken?: string;
-}
-
-// Fallback images if no Instagram token is provided
+// Fallback images if the embed script fails to load
 const fallbackImages = [
   "https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   "https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
@@ -17,31 +12,34 @@ const fallbackImages = [
   "https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
 ];
 
-const Instagram = ({ accessToken }: InstagramProps = {}) => {
-  const instafeedRef = useRef<HTMLDivElement>(null);
-  const [feedLoaded, setFeedLoaded] = useState(false);
-
+const Instagram = () => {
   useEffect(() => {
-    // Only initialize Instafeed if we have an access token
-    if (accessToken && instafeedRef.current) {
-      try {
-        const feed = new Instafeed({
-          accessToken,
-          limit: 8,
-          template: '<a href="{{link}}" target="_blank" rel="noopener noreferrer" class="block overflow-hidden rounded-lg transform transition-all duration-300 hover:scale-105"><img src="{{image}}" class="w-full h-full object-cover" alt="Instagram post" loading="lazy" /></a>',
-          container: instafeedRef.current,
-          after: function() {
-            setFeedLoaded(true);
-          }
-        });
-        
-        feed.run();
-      } catch (error) {
-        console.error('Instagram feed error:', error);
-        setFeedLoaded(false);
-      }
-    }
-  }, [accessToken]);
+    // This function injects the EmbedSocial script
+    const loadEmbedSocialScript = () => {
+      // Create the script element
+      const script = document.createElement('script');
+      script.src = 'https://embedsocial.com/embedscript/in.js';
+      script.async = true;
+      script.id = 'EmbedSocialInstagramScript';
+      
+      // Add the script to the document
+      document.body.appendChild(script);
+      
+      // Clean up function to remove the script when component unmounts
+      return () => {
+        const existingScript = document.getElementById('EmbedSocialInstagramScript');
+        if (existingScript) {
+          document.body.removeChild(existingScript);
+        }
+      };
+    };
+
+    // Load the script
+    const cleanup = loadEmbedSocialScript();
+    
+    // Return cleanup function
+    return cleanup;
+  }, []);
 
   return (
     <section id="instagram" className="py-16 md:py-24 bg-white">
@@ -63,14 +61,11 @@ const Instagram = ({ accessToken }: InstagramProps = {}) => {
           </p>
         </div>
         
-        {accessToken ? (
-          <div 
-            ref={instafeedRef} 
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-          >
-            {/* Instafeed.js will insert content here */}
-          </div>
-        ) : (
+        {/* EmbedSocial Instagram Feed Widget */}
+        <div className="embedsocial-instagram mb-8" data-ref="e7fbe95fefae3c79ae2addf0de0a1a4a8dab6168">
+          {/* The script will replace this content */}
+          
+          {/* Fallback content in case the embed doesn't load */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {fallbackImages.map((image, index) => (
               <a 
@@ -89,7 +84,7 @@ const Instagram = ({ accessToken }: InstagramProps = {}) => {
               </a>
             ))}
           </div>
-        )}
+        </div>
         
         <div className="text-center mt-10">
           <a 
