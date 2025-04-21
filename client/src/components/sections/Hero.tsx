@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <h2 className="text-3xl md:text-5xl font-display font-bold mb-4 text-dark-text leading-tight">
+            <h2 className="text-3xl md:text-5xl font-migra font-bold mb-4 text-dark-text leading-tight">
               Welcome to <span className="text-brand-green">Heirloom Studio</span>
             </h2>
             <p className="text-lg md:text-xl font-body mb-6 text-dark-text">

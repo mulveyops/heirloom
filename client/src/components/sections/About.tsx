@@ -11,7 +11,7 @@ const About = () => {
             />
           </div>
           <div className="md:w-1/2">
-            <h2 className="text-2xl md:text-4xl font-display font-bold mb-6 text-dark-text leading-tight">
+            <h2 className="text-2xl md:text-4xl font-migra font-bold mb-6 text-dark-text leading-tight">
               About <span className="text-brand-green">Us</span>
             </h2>
             <p className="text-base md:text-lg font-body mb-6 text-dark-text leading-relaxed">
@@ -19,18 +19,18 @@ const About = () => {
             </p>
             
             <div className="bg-soft-beige p-6 rounded-lg mb-6">
-              <h3 className="text-xl font-display font-semibold mb-3 text-dark-text">Hours</h3>
+              <h3 className="text-xl font-migra font-semibold mb-3 text-dark-text">Hours</h3>
               <p className="font-body text-dark-text mb-1">Monday - Saturday: 10am - 8pm</p>
               <p className="font-body text-dark-text italic mb-0">By appointment only</p>
             </div>
             
             <div className="mb-6">
-              <h3 className="text-xl font-display font-semibold mb-3 text-dark-text">Location</h3>
+              <h3 className="text-xl font-migra font-semibold mb-3 text-dark-text">Location</h3>
               <p className="font-body text-dark-text">1601 N Van Buren St, Milwaukee, WI 53202</p>
             </div>
             
             <div>
-              <h3 className="text-xl font-display font-semibold mb-3 text-dark-text">Contact</h3>
+              <h3 className="text-xl font-migra font-semibold mb-3 text-dark-text">Contact</h3>
               <p className="font-body text-dark-text mb-1">
                 Email: <a href="mailto:heirloomstudiomke@gmail.com" className="text-brand-green hover:underline">heirloomstudiomke@gmail.com</a>
               </p>

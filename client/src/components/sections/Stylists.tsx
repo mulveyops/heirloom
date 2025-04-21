@@ -5,7 +5,7 @@ const Stylists = () => {
     <section id="stylists" className="py-16 md:py-24 bg-soft-beige">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-4xl font-display font-bold mb-4 text-dark-text">
+          <h2 className="text-2xl md:text-4xl font-migra font-bold mb-4 text-dark-text">
             Our <span className="text-brand-green">Stylists</span>
           </h2>
           <p className="text-base md:text-lg font-body text-dark-text max-w-2xl mx-auto">
@@ -25,7 +25,7 @@ const Stylists = () => {
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-2xl font-display font-semibold text-dark-text">{stylist.name}</h3>
+                  <h3 className="text-2xl font-migra font-semibold text-dark-text">{stylist.name}</h3>
                   <a 
                     href={stylist.instagramUrl} 
                     target="_blank" 

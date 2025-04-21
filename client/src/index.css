@@ -61,6 +61,10 @@
   .font-body {
     font-family: 'Montserrat', sans-serif;
   }
+  
+  .font-migra {
+    font-family: 'Migra', serif;
+  }
 
   .bg-soft-beige {
     background-color: #F5F2EA;

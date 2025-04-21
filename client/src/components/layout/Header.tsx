@@ -32,17 +32,17 @@ const Header = () => {
   };
 
   return (
-    <header className={`bg-white fixed w-full z-50 transition-all ${isScrolled ? "shadow-md" : "shadow-sm"}`}>
+    <header className={`bg-brand-green fixed w-full z-50 transition-all ${isScrolled ? "shadow-md" : "shadow-sm"}`}>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <a href="#" className="flex items-center" onClick={() => handleNavClick("hero")}>
-          <h1 className="text-2xl md:text-3xl font-display font-semibold text-dark-text">
-            Heirloom <span className="text-brand-green">Studio</span>
+          <h1 className="text-2xl md:text-3xl font-migra font-semibold text-white">
+            Heirloom Studio
           </h1>
         </a>
         
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-dark-text focus:outline-none"
+          className="md:hidden text-white focus:outline-none"
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
         >
@@ -53,7 +53,7 @@ const Header = () => {
         <nav className="hidden md:flex space-x-8 items-center">
           <a 
             href="#about" 
-            className="nav-link text-dark-text hover:text-brand-green font-body font-medium"
+            className="nav-link text-white hover:text-white/80 font-body font-medium"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick("about");
@@ -63,7 +63,7 @@ const Header = () => {
           </a>
           <a 
             href="#stylists" 
-            className="nav-link text-dark-text hover:text-brand-green font-body font-medium"
+            className="nav-link text-white hover:text-white/80 font-body font-medium"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick("stylists");
@@ -73,7 +73,7 @@ const Header = () => {
           </a>
           <a 
             href="#instagram" 
-            className="nav-link text-dark-text hover:text-brand-green font-body font-medium"
+            className="nav-link text-white hover:text-white/80 font-body font-medium"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick("instagram");
@@ -83,7 +83,7 @@ const Header = () => {
           </a>
           <a 
             href="#contact" 
-            className="nav-link text-dark-text hover:text-brand-green font-body font-medium"
+            className="nav-link text-white hover:text-white/80 font-body font-medium"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick("contact");
@@ -93,7 +93,7 @@ const Header = () => {
           </a>
           <a 
             href="#join" 
-            className="nav-link text-dark-text hover:text-brand-green font-body font-medium"
+            className="nav-link text-white hover:text-white/80 font-body font-medium"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick("join");
@@ -105,7 +105,7 @@ const Header = () => {
             href="https://shop.saloninteractive.com/store/HeirloomStudiomke" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="nav-link text-dark-text hover:text-brand-green font-body font-medium"
+            className="nav-link text-white hover:text-white/80 font-body font-medium"
           >
             Shop
           </a>
@@ -113,11 +113,11 @@ const Header = () => {
       </div>
       
       {/* Mobile Navigation Menu */}
-      <nav className={`px-4 py-3 bg-white md:hidden ${mobileMenuOpen ? "block" : "hidden"}`}>
+      <nav className={`px-4 py-3 bg-brand-green md:hidden ${mobileMenuOpen ? "block" : "hidden"}`}>
         <div className="flex flex-col space-y-4">
           <a 
             href="#about" 
-            className="nav-link text-dark-text hover:text-brand-green font-body font-medium py-2"
+            className="nav-link text-white hover:text-white/80 font-body font-medium py-2"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick("about");
@@ -127,7 +127,7 @@ const Header = () => {
           </a>
           <a 
             href="#stylists" 
-            className="nav-link text-dark-text hover:text-brand-green font-body font-medium py-2"
+            className="nav-link text-white hover:text-white/80 font-body font-medium py-2"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick("stylists");
@@ -137,7 +137,7 @@ const Header = () => {
           </a>
           <a 
             href="#instagram" 
-            className="nav-link text-dark-text hover:text-brand-green font-body font-medium py-2"
+            className="nav-link text-white hover:text-white/80 font-body font-medium py-2"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick("instagram");
@@ -147,7 +147,7 @@ const Header = () => {
           </a>
           <a 
             href="#contact" 
-            className="nav-link text-dark-text hover:text-brand-green font-body font-medium py-2"
+            className="nav-link text-white hover:text-white/80 font-body font-medium py-2"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick("contact");
@@ -157,7 +157,7 @@ const Header = () => {
           </a>
           <a 
             href="#join" 
-            className="nav-link text-dark-text hover:text-brand-green font-body font-medium py-2"
+            className="nav-link text-white hover:text-white/80 font-body font-medium py-2"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick("join");
@@ -169,7 +169,7 @@ const Header = () => {
             href="https://shop.saloninteractive.com/store/HeirloomStudiomke" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="nav-link text-dark-text hover:text-brand-green font-body font-medium py-2"
+            className="nav-link text-white hover:text-white/80 font-body font-medium py-2"
           >
             Shop
           </a>
