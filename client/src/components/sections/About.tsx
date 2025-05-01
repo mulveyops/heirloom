@@ -5,8 +5,8 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12">
             <img 
-              src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-              alt="Heirloom Studio team" 
+              src="/images/studio.jpg" 
+              alt="Heirloom Studio" 
               className="rounded-lg shadow-lg w-full h-auto object-cover"
             />
           </div>

@@ -20,7 +20,7 @@ const Stylists = () => {
                 <img 
                   src={stylist.image} 
                   alt={`${stylist.name} - Hair Stylist`} 
-                  className="w-full h-64 object-cover"
+                  className="w-full h-auto object-cover"
                 />
               </div>
               <div className="p-6">
