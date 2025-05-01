@@ -1,45 +1,25 @@
 import { useEffect } from 'react';
 
-// Fallback images if the embed script fails to load
-const fallbackImages = [
-  "https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1565764024333-25c333a581a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1554519934-e32b1629d9ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1470259078422-826894b933aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-];
-
 const Instagram = () => {
   useEffect(() => {
-    // This function injects the EmbedSocial script
-    const loadEmbedSocialScript = () => {
-      // Create the script element
-      const script = document.createElement('script');
-      script.src = 'https://embedsocial.com/embedscript/in.js';
-      script.async = true;
-      script.id = 'EmbedSocialInstagramScript';
-      
-      // Add the script to the document
-      document.body.appendChild(script);
-      
-      // Clean up function to remove the script when component unmounts
-      return () => {
-        const existingScript = document.getElementById('EmbedSocialInstagramScript');
-        if (existingScript) {
-          document.body.removeChild(existingScript);
-        }
-      };
-    };
+    const scriptId = 'EmbedSocialHashtagScript';
 
-    // Load the script
-    const cleanup = loadEmbedSocialScript();
-    
-    // Return cleanup function
-    return cleanup;
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement('script');
+      script.src = 'https://embedsocial.com/cdn/ht.js';
+      script.async = true;
+      script.id = scriptId;
+      document.body.appendChild(script);
+    }
+
+    return () => {
+      const existingScript = document.getElementById(scriptId);
+      if (existingScript) {
+        document.body.removeChild(existingScript);
+      }
+    };
   }, []);
+
 
   return (
     <section id="instagram" className="py-16 md:py-24 bg-white">
@@ -62,28 +42,7 @@ const Instagram = () => {
         </div>
         
         {/* EmbedSocial Instagram Feed Widget */}
-        <div className="embedsocial-instagram mb-8" data-ref="e7fbe95fefae3c79ae2addf0de0a1a4a8dab6168">
-          {/* The script will replace this content */}
-          
-          {/* Fallback content in case the embed doesn't load */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {fallbackImages.map((image, index) => (
-              <a 
-                key={index}
-                href="https://www.instagram.com/heirloomstudiomke/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block overflow-hidden rounded-lg transform transition-all duration-300 hover:scale-105"
-                aria-label="Instagram post"
-              >
-                <img 
-                  src={image} 
-                  alt="Instagram post" 
-                  className="w-full h-full object-cover"
-                />
-              </a>
-            ))}
-          </div>
+        <div className="embedsocial-hashtag" data-ref="20ce088e662e178112a3f3628539c41c448c57a8">
         </div>
         
         <div className="text-center mt-10">

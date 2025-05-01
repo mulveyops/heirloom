@@ -79,19 +79,19 @@
   }
 
   .text-brand-green {
-    color: #25a70c;
+    color: #33443c;
   }
 
   .bg-brand-green {
-    background-color: #25a70c;
+    background-color: #33443c;
   }
 
   .border-brand-green {
-    border-color: #25a70c;
+    border-color: #33443c;
   }
 
   .nav-link:hover {
-    color: #25a70c;
+    color: #33443c;
     transition: color 0.3s ease;
   }
 
