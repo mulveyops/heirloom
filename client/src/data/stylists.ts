@@ -13,7 +13,7 @@ export const stylists: Stylist[] = [
   {
     name: "Alyssa",
     title: "Guest Stylist",
-    image: "https://images.unsplash.com/photo-1605980776566-0486c3ac7617?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/Alyssa.JPG",
     bio: "Alyssa is a Chicago-based stylist and the owner of Atlas Salon, with over 10 years of experience and a passion for compassionate, personalized hair care. She specializes in Blonding, Creative Color, and Color Corrections, and takes pride in designing haircuts that enhance each client's natural texture and personal style. She joins the Heirloom team every five weeks, offering her services in our quaint and supportive space.",
     specialties: ["Blonding", "Creative Color", "Color Corrections", "Personalized Haircuts"],
     bookingUrl: "https://www.atlashairsalon.com/milwaukee",
