@@ -49,7 +49,7 @@ export const stylists: Stylist[] = [
     {
     name: "Hanna",
     title: "Stylist",
-    image: "images/Hanna/.jpg",
+    image: "images/Hanna.jpg",
     bio: "Hanna has been a passionate hairstylist for over 5 years, specializing in men’s barbering and long layered haircuts. With a sharp eye for detail and a love for both precision and creativity, she’s all about helping clients look and feel their best.  What sets Hanna apart is the welcoming, comfortable vibe she creates in her chair. She believes a great haircut starts with trust and a good conversation. Whether it’s a clean fade or effortless layers, Hanna brings skill, warmth, and care to every appointment.",
     specialties: ["Barbering", "Long Layered Cuts"],
     bookingUrl: "https://heirloomstudiomke.glossgenius.com/",
