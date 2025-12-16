@@ -23,7 +23,7 @@ export const stylists: Stylist[] = [
     name: "Ashley",
     title: "Stylist",
     image: "/images/HeirloomAshley-24.jpg",
-    bio: "Ashley has 14 years of experience with a passion and expertise for precision haircutting, cuts to enhance natural textures, lived in color, creative color and special occasion updos. Her goal as a stylist is to keep growing and never stop learning new trends and techniques. \"Making my clients feel comfortable and confident is a top priority, as I want everyone to feel welcome in my chair.\"",
+    bio: "Ashley has 14 years of experience with a passion and expertise for precision haircutting, cuts to enhance natural textures, lived in color, creative color, and special occasion updos. Her goal as a stylist is to keep growing and never stop learning new trends and techniques. \"Making my clients feel comfortable and confident is a top priority, as I want everyone to feel welcome in my chair.\"",
     specialties: ["Precision Haircutting", "Natural Textures", "Lived-in Color", "Special Occasion Updos"],
     bookingUrl: "https://www.vagaro.com/us04/ashleycorey",
     instagramUrl: "https://www.instagram.com/thebeautyalchemistmke/"
