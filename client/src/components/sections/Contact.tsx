@@ -53,6 +53,7 @@ const Contact = () => {
                   >
                     414-202-9691
                   </a>
+                  <p className="font-body text-dark-text italic">Text or call us!</p>
                 </div>
               </div>
               
