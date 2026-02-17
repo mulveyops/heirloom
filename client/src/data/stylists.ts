@@ -10,34 +10,7 @@ export const stylists: Stylist[] = [
     bookingUrl: "https://heirloomstudiomke.glossgenius.com/",
     instagramUrl: "https://www.instagram.com/heirloomstudiomke/"
   },
-  {
-    name: "Alyssa",
-    title: "Guest Stylist",
-    image: "/images/Alyssa.JPG",
-    bio: "Alyssa is a Chicago-based stylist and the owner of Atlas Salon, with over 10 years of experience and a passion for compassionate, personalized hair care. She specializes in Blonding, Creative Color, and Color Corrections, and takes pride in designing haircuts that enhance each client's natural texture and personal style. She joins the Heirloom team every five weeks, offering her services in our quaint and supportive space.",
-    specialties: ["Blonding", "Creative Color", "Color Corrections", "Personalized Haircuts"],
-    bookingUrl: "https://www.atlashairsalon.com/milwaukee",
-    instagramUrl: "https://www.instagram.com/atlashairsalon/"
-  },
-  {
-    name: "Ashley",
-    title: "Stylist",
-    image: "/images/HeirloomAshley-24.jpg",
-    bio: "Ashley has 14 years of experience with a passion and expertise for precision haircutting, cuts to enhance natural textures, lived in color, creative color, and special occasion updos. Her goal as a stylist is to keep growing and never stop learning new trends and techniques. \"Making my clients feel comfortable and confident is a top priority, as I want everyone to feel welcome in my chair.\"",
-    specialties: ["Precision Haircutting", "Natural Textures", "Lived-in Color", "Special Occasion Updos"],
-    bookingUrl: "https://www.vagaro.com/us04/ashleycorey",
-    instagramUrl: "https://www.instagram.com/thebeautyalchemistmke/"
-  },
-  {
-    name: "Gracie",
-    title: "Stylist",
-    image: "images/HeirloomGracie-4.jpg",
-    bio: "Gracie is our social butterfly hairstylist who's passionate about making every client feel welcome the moment they sit in her chair. She loves connecting with people and helping them feel confident and beautiful through personalized hair transformations. Whether it's a fresh cut, a bold blonde moment, or that effortless, lived-in color, Gracie is all about bringing your vision to life. Her goal is to create looks that feel authentic, stylish, and easy to love.",
-    specialties: ["Precision Cuts", "Lived in Color"],
-    bookingUrl: "https://graciemuench.glossgenius.com/",
-    instagramUrl: "https://www.instagram.com/hairbygraciemke/"
-  },
-  {
+    {
     name: "Anna",
     title: "Stylist",
     image: "images/HeirloomAnna-36.jpg",
@@ -54,5 +27,32 @@ export const stylists: Stylist[] = [
     specialties: ["Barbering", "Long Layered Cuts"],
     bookingUrl: "https://heirloomstudiomke.glossgenius.com/",
     instagramUrl: "https://www.instagram.com/hairbyhannamke?igsh=MW11NWw2MW5yb2F1ZA=="
+  },
+    {
+    name: "Gracie",
+    title: "Stylist",
+    image: "images/HeirloomGracie-4.jpg",
+    bio: "Gracie is our social butterfly hairstylist who's passionate about making every client feel welcome the moment they sit in her chair. She loves connecting with people and helping them feel confident and beautiful through personalized hair transformations. Whether it's a fresh cut, a bold blonde moment, or that effortless, lived-in color, Gracie is all about bringing your vision to life. Her goal is to create looks that feel authentic, stylish, and easy to love.",
+    specialties: ["Precision Cuts", "Lived in Color"],
+    bookingUrl: "https://heirloomstudiomke.glossgenius.com/",
+    instagramUrl: "https://www.instagram.com/hairbygraciemke/"
+  },
+    {
+    name: "Ashley",
+    title: "Stylist",
+    image: "/images/HeirloomAshley-24.jpg",
+    bio: "Ashley has 14 years of experience with a passion and expertise for precision haircutting, cuts to enhance natural textures, lived in color, creative color, and special occasion updos. Her goal as a stylist is to keep growing and never stop learning new trends and techniques. \"Making my clients feel comfortable and confident is a top priority, as I want everyone to feel welcome in my chair.\"",
+    specialties: ["Precision Haircutting", "Natural Textures", "Lived-in Color", "Special Occasion Updos"],
+    bookingUrl: "https://www.vagaro.com/us04/ashleycorey",
+    instagramUrl: "https://www.instagram.com/thebeautyalchemistmke/"
+  },
+  {
+    name: "Alyssa",
+    title: "Guest Stylist",
+    image: "/images/Alyssa.JPG",
+    bio: "Alyssa is a Chicago-based stylist and the owner of Atlas Salon, with over 10 years of experience and a passion for compassionate, personalized hair care. She specializes in Blonding, Creative Color, and Color Corrections, and takes pride in designing haircuts that enhance each client's natural texture and personal style. She joins the Heirloom team every five weeks, offering her services in our quaint and supportive space.",
+    specialties: ["Blonding", "Creative Color", "Color Corrections", "Personalized Haircuts"],
+    bookingUrl: "https://www.atlashairsalon.com/milwaukee",
+    instagramUrl: "https://www.instagram.com/atlashairsalon/"
   }
 ];

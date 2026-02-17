@@ -109,6 +109,14 @@ const Header = () => {
           >
             Shop
           </a>
+          <a 
+            href="https://heirloomstudiomke.glossgenius.com/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="px-4 py-2 bg-white text-brand-green font-body font-medium rounded hover:bg-opacity-90 transition-all"
+          >
+            Book Now
+          </a>
         </nav>
       </div>
       
@@ -173,8 +181,17 @@ const Header = () => {
           >
             Shop
           </a>
+          <a 
+            href="https://heirloomstudiomke.glossgenius.com/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="px-4 py-2 bg-white text-brand-green font-body font-medium rounded hover:bg-opacity-90 transition-all"
+          >
+            Book Now
+          </a>
         </div>
       </nav>
+
     </header>
   );
 };

@@ -40,6 +40,21 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
+
+                            <div className="flex items-start mb-6">
+                <div className="text-brand-green mr-4">
+                  <i className="fas fa-phone text-2xl"></i>
+                </div>
+                <div>
+                  <h4 className="font-body font-medium text-dark-text mb-1">Phone Number</h4>
+                  <a 
+                    href="tel:414-202-9691" 
+                    className="font-body text-brand-green hover:underline"
+                  >
+                    414-202-9691
+                  </a>
+                </div>
+              </div>
               
               <div className="flex items-start mb-6">
                 <div className="text-brand-green mr-4">
