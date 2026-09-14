@@ -1,3 +1,5 @@
+import hero from "@/content/hero.json";
+
 const Hero = () => {
   const handleScrollToStylists = () => {
     const stylistsSection = document.getElementById("stylists");
@@ -22,7 +24,7 @@ const Hero = () => {
       id="hero"
       className="relative min-h-screen bg-cover bg-center flex items-center justify-center"
       style={{
-        backgroundImage: "url('/images/HeirloomStudio-47.jpg')",
+        backgroundImage: `url('${hero.backgroundImage}')`,
       }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -31,7 +33,7 @@ const Hero = () => {
           Welcome to <span className="text-brand-green">Heirloom Studio</span>
         </h2>
         <p className="text-base md:text-lg font-body mb-4">
-          Your destination for personalized hair experiences in Milwaukee's east side.
+          {hero.subheading}
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <button

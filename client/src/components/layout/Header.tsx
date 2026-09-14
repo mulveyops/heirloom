@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import site from "@/content/site.json";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,7 +37,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <a href="#" className="flex items-center" onClick={() => handleNavClick("hero")}>
           <h1 className="text-2xl md:text-3xl font-migra font-semibold text-white">
-            Heirloom Studio
+            {site.name}
           </h1>
         </a>
         
@@ -102,7 +103,7 @@ const Header = () => {
             Join Our Team
           </a>
           <a 
-            href="https://shop.saloninteractive.com/store/HeirloomStudiomke" 
+            href={site.shopUrl} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="nav-link text-white hover:text-white/80 font-body font-medium"
@@ -110,7 +111,7 @@ const Header = () => {
             Shop
           </a>
           <a 
-            href="https://heirloomstudiomke.glossgenius.com/" 
+            href={site.bookingUrl} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="px-4 py-2 bg-white text-brand-green font-body font-medium rounded hover:bg-opacity-90 transition-all"
@@ -174,7 +175,7 @@ const Header = () => {
             Join Our Team
           </a>
           <a 
-            href="https://shop.saloninteractive.com/store/HeirloomStudiomke" 
+            href={site.shopUrl} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="nav-link text-white hover:text-white/80 font-body font-medium py-2"
@@ -182,7 +183,7 @@ const Header = () => {
             Shop
           </a>
           <a 
-            href="https://heirloomstudiomke.glossgenius.com/" 
+            href={site.bookingUrl} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="px-4 py-2 bg-white text-brand-green font-body font-medium rounded hover:bg-opacity-90 transition-all"

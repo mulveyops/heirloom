@@ -1,0 +1,166 @@
+media:
+  input: client/public/images
+  output: /images
+
+content:
+  - name: site
+    label: Salon Info & Links
+    description: Name, address, hours, and the links used across the whole site.
+    type: file
+    path: client/src/content/site.json
+    fields:
+      - name: name
+        label: Salon Name
+        type: string
+        required: true
+      - name: address
+        label: Address
+        type: string
+        required: true
+      - name: email
+        label: Email
+        type: string
+        required: true
+      - name: phone
+        label: Phone Number
+        type: string
+      - name: phoneNote
+        label: Phone Note
+        description: Small note shown under the phone number (e.g. "Text or call us!")
+        type: string
+      - name: hours
+        label: Hours
+        type: string
+      - name: hoursNote
+        label: Hours Note
+        description: Small note shown under the hours (e.g. "By appointment only")
+        type: string
+      - name: instagramHandle
+        label: Instagram Handle
+        description: Shown as the link text, e.g. @heirloomstudiomke
+        type: string
+      - name: instagramUrl
+        label: Instagram Link
+        type: string
+      - name: bookingUrl
+        label: Booking Link
+        description: Where the "Book Now" buttons go.
+        type: string
+      - name: shopUrl
+        label: Online Shop Link
+        type: string
+
+  - name: hero
+    label: Welcome Banner
+    description: The full-screen photo and text at the top of the site.
+    type: file
+    path: client/src/content/hero.json
+    fields:
+      - name: backgroundImage
+        label: Background Photo
+        type: image
+      - name: subheading
+        label: Welcome Text
+        type: text
+
+  - name: about
+    label: About Us
+    type: file
+    path: client/src/content/about.json
+    fields:
+      - name: image
+        label: Photo
+        type: image
+      - name: body
+        label: About Text
+        type: text
+
+  - name: stylists
+    label: Stylists
+    description: Add, remove, reorder, and edit the stylist cards.
+    type: file
+    path: client/src/content/stylists.json
+    fields:
+      - name: intro
+        label: Section Intro
+        type: text
+      - name: stylists
+        label: Stylists
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Name
+            type: string
+            required: true
+          - name: title
+            label: Title
+            description: e.g. Stylist, Owner & Stylist, Guest Stylist
+            type: string
+          - name: image
+            label: Photo
+            type: image
+          - name: bio
+            label: Bio
+            type: text
+          - name: specialties
+            label: Specialties
+            type: string
+            list: true
+          - name: bookingUrl
+            label: Booking Link
+            type: string
+          - name: instagramUrl
+            label: Instagram Link
+            type: string
+
+  - name: instagram
+    label: Instagram Section
+    type: file
+    path: client/src/content/instagram.json
+    fields:
+      - name: intro
+        label: Section Intro
+        type: text
+
+  - name: contact
+    label: Contact Section
+    type: file
+    path: client/src/content/contact.json
+    fields:
+      - name: intro
+        label: Section Intro
+        type: text
+      - name: mapEmbedUrl
+        label: Google Maps Embed Link
+        description: Only change this if the salon moves. In Google Maps use Share > Embed a map, then copy the link inside src="...".
+        type: string
+
+  - name: join
+    label: Join Our Team
+    type: file
+    path: client/src/content/join.json
+    fields:
+      - name: paragraphs
+        label: Paragraphs
+        type: text
+        list: true
+      - name: perks
+        label: Perks
+        type: string
+        list: true
+      - name: closing
+        label: Closing Line
+        type: string
+      - name: applyUrl
+        label: Application Form Link
+        type: string
+
+  - name: shop
+    label: Shop Section
+    type: file
+    path: client/src/content/shop.json
+    fields:
+      - name: intro
+        label: Section Intro
+        type: text

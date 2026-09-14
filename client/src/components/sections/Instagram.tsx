@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import instagram from "@/content/instagram.json";
+import site from "@/content/site.json";
 
 const Instagram = () => {
   useEffect(() => {
@@ -29,26 +31,26 @@ const Instagram = () => {
             Follow Us on <span className="text-brand-green">Instagram</span>
           </h2>
           <p className="text-base md:text-lg font-body text-dark-text max-w-2xl mx-auto">
-            Check out our latest work and get inspired for your next visit.{" "}
-            <a 
-              href="https://www.instagram.com/heirloomstudiomke/" 
-              target="_blank" 
+            {instagram.intro}{" "}
+            <a
+              href={site.instagramUrl}
+              target="_blank"
               rel="noopener noreferrer"
               className="text-brand-green hover:underline"
             >
-              @heirloomstudiomke
+              {site.instagramHandle}
             </a>
           </p>
         </div>
-        
+
         {/* EmbedSocial Instagram Feed Widget */}
         <div className="embedsocial-hashtag" data-ref="20ce088e662e178112a3f3628539c41c448c57a8">
         </div>
-        
+
         <div className="text-center mt-10">
-          <a 
-            href="https://www.instagram.com/heirloomstudiomke/" 
-            target="_blank" 
+          <a
+            href={site.instagramUrl}
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 bg-brand-green text-white font-body font-medium rounded-full shadow-md hover:bg-opacity-90 transition-all booking-btn"
           >
