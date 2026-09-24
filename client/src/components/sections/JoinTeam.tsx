@@ -9,7 +9,7 @@ const JoinTeam = () => {
             <h2 className="text-2xl md:text-4xl font-migra font-bold mb-6 text-dark-text leading-tight">
               Join Our <span className="text-brand-green">Team</span>
             </h2>
-            {join.paragraphs.map((paragraph, index) => (
+            {(join.paragraphs ?? []).map((paragraph, index) => (
               <p key={index} className="text-base md:text-lg font-body mb-6 text-dark-text leading-relaxed">
                 {paragraph}
               </p>
@@ -21,7 +21,7 @@ const JoinTeam = () => {
               <h3 className="text-xl md:text-2xl font-migra font-semibold mb-6 text-dark-text">Perks You'll Enjoy</h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {join.perks.map((perk, index) => (
+                {(join.perks ?? []).map((perk, index) => (
                   <div key={index} className="flex items-start">
                     <div className="text-brand-green mr-3">
                       <i className="fas fa-check-circle"></i>
