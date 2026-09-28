@@ -79,11 +79,6 @@
       ],
       "bookingUrl": "https://www.atlashairsalon.com/milwaukee",
       "instagramUrl": "https://www.instagram.com/atlashairsalon/"
-    },
-    {
-      "name": "Steven",
-      "title": "IT Guy",
-      "image": "/images/test image.png"
     }
   ]
 }
