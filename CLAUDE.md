@@ -75,6 +75,15 @@ Note: Render only runs `vite build`, which doesn't typecheck. Always run
   the Static Site in Render, keep the apex A record (Render shared IP), update
   the `www` CNAME to the new site's `.onrender.com` host if Render flags it.
 
+## Announcement popup
+
+`Announcement.tsx` + `content/announcement.json`: an owner-toggleable promo
+popup (headline, message, optional button/image/end date). Dismissal is stored
+in localStorage keyed by a hash of the content, so each new announcement shows
+once per visitor. `?announce=preview` on any URL force-shows it (even while
+disabled) for checking drafts. A banner variant was mocked up and rejected —
+popup only.
+
 ## Open items
 
 - Confirm Static Site + domain cutover is complete; then delete old Web Service.

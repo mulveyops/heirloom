@@ -50,6 +50,38 @@ content:
         label: Online Shop Link
         type: string
 
+  - name: announcement
+    label: Announcement Popup
+    description: A popup for sales, promos, or news. Turn it on, fill in the text, and it appears for visitors; turn it off when the promo ends.
+    type: file
+    path: client/src/content/announcement.json
+    fields:
+      - name: enabled
+        label: Show the popup
+        description: Flip this on to show the announcement, off to hide it.
+        type: boolean
+      - name: headline
+        label: Headline
+        type: string
+      - name: message
+        label: Message
+        type: text
+      - name: buttonText
+        label: Button Text
+        description: e.g. "Vote Now" or "See the Deal". Leave blank for no button.
+        type: string
+      - name: buttonUrl
+        label: Button Link
+        description: Where the button takes people. Leave blank for no button.
+        type: string
+      - name: image
+        label: Photo (optional)
+        type: image
+      - name: endDate
+        label: End Date (optional)
+        description: The popup hides itself after this day, even if still switched on.
+        type: date
+
   - name: hero
     label: Welcome Banner
     description: The full-screen photo and text at the top of the site.

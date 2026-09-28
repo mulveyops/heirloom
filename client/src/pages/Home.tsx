@@ -1,4 +1,5 @@
 import Header from "@/components/layout/Header";
+import Announcement from "@/components/sections/Announcement";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
@@ -12,6 +13,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-off-white">
       <Header />
+      <Announcement />
       <Hero />
       <About />
       <Stylists />
