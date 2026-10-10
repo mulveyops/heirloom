@@ -12,7 +12,7 @@
         "Barbering",
         "Gender Affirming Cuts"
       ],
-      "bookingUrl": "https://heirloomstudiomke.glossgenius.com/",
+      "bookingUrl": "http://heirloomstudiomke.glossgenius.com/services?team_member_token=10017-73484da7-bba4-405d-a984-2bfc9f2125b0",
       "instagramUrl": "https://www.instagram.com/heirloomstudiomke/"
     },
     {
@@ -25,7 +25,7 @@
         "Comfort Centered Styling",
         "Dimensional Color"
       ],
-      "bookingUrl": "https://heirloomstudiomke.glossgenius.com/",
+      "bookingUrl": "http://heirloomstudiomke.glossgenius.com/services?team_member_token=10017-6f7966f0-23ea-4bb4-83c3-d28094c69808",
       "instagramUrl": "https://www.instagram.com/hairbyannavg?igsh=aGd6OWVqaWY0Njlh"
     },
     {
@@ -37,7 +37,7 @@
         "Barbering",
         "Long Layered Cuts"
       ],
-      "bookingUrl": "https://heirloomstudiomke.glossgenius.com/",
+      "bookingUrl": "http://heirloomstudiomke.glossgenius.com/services?team_member_token=10017-ac1391ff-bc95-4bdc-92f0-fad85001155a",
       "instagramUrl": "https://www.instagram.com/hairbyhannamke?igsh=MW11NWw2MW5yb2F1ZA=="
     },
     {
@@ -49,7 +49,7 @@
         "Precision Cuts",
         "Lived in Color"
       ],
-      "bookingUrl": "https://heirloomstudiomke.glossgenius.com/",
+      "bookingUrl": "http://heirloomstudiomke.glossgenius.com/services?team_member_token=10017-f744b5c5-8e01-46cd-9a14-1975fe19fed8",
       "instagramUrl": "https://www.instagram.com/hairbygraciemke/"
     },
     {
@@ -68,13 +68,14 @@
     },
     {
       "name": "Carolyn",
+      "title": "Stylist",
       "bio": "With her positive attitude, chill nature, and careful consultations clients will instantly feel at ease in Carolyn’s chair. While she finds the most joy in alternative cuts and vivid colors, Carolyn prides herself in being skilled in classic cuts and colors as well - rich brunettes and reds being her current obsession. She also specializes in elaborate braids and special event styling. With a deep love for all things hair and fashion Carolyn is always up to date on the current trends and has no shortage of fresh ideas to offer clients!",
       "specialties": [
         "Bridal Hair",
         "Alternative Cuts",
         "Vivid Color"
       ],
-      "bookingUrl": "https://heirloomstudiomke.glossgenius.com/",
+      "bookingUrl": "http://heirloomstudiomke.glossgenius.com/services?team_member_token=10017-e05a6998-7802-4ef8-af36-dbf4300c7c21",
       "instagramUrl": "https://www.instagram.com/hairwithcare_mke?xtok=MWlyZ253NWlwNTIzeQ=="
     },
     {
@@ -86,7 +87,7 @@
         "Classic Styling",
         "Vidal Sassoon"
       ],
-      "bookingUrl": "https://heirloomstudiomke.glossgenius.com/",
+      "bookingUrl": "http://heirloomstudiomke.glossgenius.com/services?team_member_token=10017-834a07ec-0627-4269-8d4c-d1a31590fa95",
       "instagramUrl": "https://www.instagram.com/mariposa_hair_mke?dlrf=Mm1sZnpkeHg1dGs4"
     }
   ]
