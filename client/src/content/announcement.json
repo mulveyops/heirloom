@@ -1,9 +1,9 @@
 {
-  "enabled": false,
-  "headline": "Vote Heirloom Studio!",
-  "message": "We're nominated for Best Hair Salon in the Shepherd Express Best of Milwaukee — we'd love your vote!",
-  "buttonText": "Vote Now",
-  "buttonUrl": "https://vote.shepherdexpress.com",
-  "image": "/images/HeirloomStudio-15.jpg",
-  "endDate": ""
+  "enabled": true,
+  "headline": "Vote Heirloom Studio, Kalie & Hanna!!",
+  "message": "We're nominated for 4 categories in the Shepherd Express Best of Milwaukee 2026 — we'd love your vote!\n\nWomen's Best Hair Salon - Heirloom Studio\nMen's Best Hair Salon -Heirloom Studio\nBest Women's Hairstylist - Kalie Bowes\nBest Men's Hairstylist- Hanna Stewart",
+  "buttonText": "Vote Now Under Services Rendered!",
+  "buttonUrl": "https://shepherdexpress.com/best-of-milwaukee/2026#//",
+  "image": "/images/7594758.jpg",
+  "endDate": "2026-10-29"
 }
