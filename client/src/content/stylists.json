@@ -65,6 +65,29 @@
       ],
       "bookingUrl": "https://www.vagaro.com/us04/ashleycorey",
       "instagramUrl": "https://www.instagram.com/thebeautyalchemistmke/"
+    },
+    {
+      "name": "Carolyn",
+      "bio": "With her positive attitude, chill nature, and careful consultations clients will instantly feel at ease in Carolyn’s chair. While she finds the most joy in alternative cuts and vivid colors, Carolyn prides herself in being skilled in classic cuts and colors as well - rich brunettes and reds being her current obsession. She also specializes in elaborate braids and special event styling. With a deep love for all things hair and fashion Carolyn is always up to date on the current trends and has no shortage of fresh ideas to offer clients!",
+      "specialties": [
+        "Bridal Hair",
+        "Alternative Cuts",
+        "Vivid Color"
+      ],
+      "bookingUrl": "https://heirloomstudiomke.glossgenius.com/",
+      "instagramUrl": "https://www.instagram.com/hairwithcare_mke?xtok=MWlyZ253NWlwNTIzeQ=="
+    },
+    {
+      "name": "Mary",
+      "title": "Stylist",
+      "bio": "With over 20 years of experience behind the chair, Mary is creative and loves making people feel their best. She takes pride in making every client feel both at ease and truly heard from the moment they sit down. She has taken classes at Vidal Sassoon, Goldwell, American Crew and more. She believes that a haircut with a good structure will look as great as when you leave her chair by the time you are ready to return. She is passionate about healthy hair, long layers, curls, color, updos, and styling. If you are looking for a dramatic change or a trim, she has the knowledge, poise, and creativity to provide the look you desire.",
+      "specialties": [
+        "Bridal Hair",
+        "Classic Styling",
+        "Vidal Sassoon"
+      ],
+      "bookingUrl": "https://heirloomstudiomke.glossgenius.com/",
+      "instagramUrl": "https://www.instagram.com/mariposa_hair_mke?dlrf=Mm1sZnpkeHg1dGs4"
     }
   ]
 }
